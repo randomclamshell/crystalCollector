@@ -1,0 +1,11 @@
+* {  /* the * means select everything on the page */
+
+  width: fit-content;
+  align-content: center;
+}
+
+body {
+  background-image: url(http://i677.photobucket.com/albums/vv134/shelbywrks/1425117474_7c496d6efa.jpg)
+  position: fixed;
+  z-index: -123;
+}
