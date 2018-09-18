@@ -9,3 +9,9 @@ body {
   position: fixed;
   z-index: -123;
 }
+
+.img-fluid {
+  width: 200px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+}
