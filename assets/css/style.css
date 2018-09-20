@@ -1,17 +1,29 @@
 * {  /* the * means select everything on the page */
-
-  width: fit-content;
   align-content: center;
 }
 
 body {
-  background-image: url(http://i677.photobucket.com/albums/vv134/shelbywrks/1425117474_7c496d6efa.jpg)
-  position: fixed;
+  background-image: url("http://i677.photobucket.com/albums/vv134/shelbywrks/1425117474_7c496d6efa.jpg");
+  position fixed;
   z-index: -123;
 }
 
 .img-fluid {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin: 10px 10px 10px 10px;
+}
+
+.img-fluid:hover {
+  -webkit-filter: invert(100%) !important;
+}
+
+.jumbotron {
+  width: 50%;
+  color: antiquewhite;
+  background-color: goldenrod;
+}
+
+.row {
+  float: left;
 }
