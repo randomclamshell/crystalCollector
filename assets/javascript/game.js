@@ -85,10 +85,6 @@ $("#newGame").on("click", function () {
 
 if (computerGuess === currentScore) {
   totalWins++;
-  alert("You win!")
 } else {
-  alert("Sorry Sport.")
   totalLosses++;
-
-  console.log("alerts")
 };

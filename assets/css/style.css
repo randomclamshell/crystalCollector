@@ -3,8 +3,8 @@
 }
 
 body {
-  background-image: url("http://i677.photobucket.com/albums/vv134/shelbywrks/1425117474_7c496d6efa.jpg");
-  position fixed;
+  background-image: url("https://wallpapercave.com/wp/nsFJoNv.jpg");
+  position: ;
   z-index: -123;
 }
 
@@ -19,11 +19,22 @@ body {
 }
 
 .jumbotron {
-  width: 50%;
-  color: antiquewhite;
-  background-color: goldenrod;
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 10px;
+  border: black 2px solid;
 }
 
 .row {
   float: left;
+}
+
+nav {
+  font-family: 'Slabo 27px', serif;
+  padding: 10px;
+  border: 2px black solid;
+}
+
+.bkgrnd {
+  z-index: -234;
 }
