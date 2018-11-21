@@ -78,7 +78,7 @@ $("#newGame").on("click", function () {
   totalWins = 0;
   computerGuess = Math.floor(Math.random() * 20) + 50;
 
-  console.log(newGameButton);
+  console.log("button click");
 });
 
 //rules
