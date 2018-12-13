@@ -1,114 +1,113 @@
-console.log("javascript has loaded");
-
-
-//create variables for the game and set them equal to 0
-
-var crystal1 = 0;
-var crystal2 = 0;
-var crystal3 = 0;
-var crystal4 = 0;
+//VARIABLES
+// ------------------------------------------------------------------------------------
 
 //total score for current game
 var currentScore = 0;
-
 var userScore = currentScore;
+$("#userScore").text(currentScore);
 
-//make an array for the numbers
-
-var numbers1 = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
-var numbers2 = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
-var numbers3 = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
-var numbers4 = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
-
-
-
+//assign a value to each crystal
+var c1 = Math.floor(Math.random() * 9) + 1;
+var c2 = Math.floor(Math.random() * 9) + 1;
+var c3 = Math.floor(Math.random() * 9) + 1;
+var c4 = Math.floor(Math.random() * 9) + 1;
 
 //variable for computer guess
-var computerGuess = Math.floor(Math.random() * 20) + 80;
-console.log(computerGuess);
-
+var computerGuess = Math.floor(Math.random() * 100 + 1);
 $("#computerGuess").text(computerGuess);
 
+//variables for wins and losses
+
+var wins = 0;
+$("#gamesWon").text(wins);
+var losses = 0;
+$("#gamesLost").text(losses);
+
+//FUNCTIONS
+// ------------------------------------------------------------------------------------
+
+//reset game function
 function reset() {
-  userScore = 0;
-  computerGuess = Math.floor(Math.random() * 20) + 80;
+  currentScore = 0;
+  computerGuess = Math.floor(Math.random() * 100 + 1);
+  c1 = Math.floor(Math.random() * 9) + 1;
+  c2 = Math.floor(Math.random() * 9) + 1;
+  c3 = Math.floor(Math.random() * 9) + 1;
+  c4 = Math.floor(Math.random() * 9) + 1;
   $("#userScore").text(userScore);
+  $("#computerGuess").text(computerGuess)
+}
 
-console.log("new number1: " + numbers1)
-console.log("new number2: " + numbers2)
-console.log("new number3: " + numbers3)
-console.log("new number4: " + numbers4)
-  } 
-
-function youWon() {
+//win
+function youWin() {
   alert("You win!");
+  wins++;
+  $("#gamesWon").text(wins);
   reset();
 }
 
-function youLost() {
+//lose
+function youLose() {
   alert("You lose! Try again!");
+  losses++;
+  $("#gamesLost").text(losses)
   reset();
 }
 
-//create event
+//EVENTS
+// ------------------------------------------------------------------------------------
+
 $("#image1").on("click", function () {
-  console.log("image 1 clicked")
-  currentScore = currentScore + numbers1;
+
+  currentScore = currentScore + c1;
   $("#userScore").text(currentScore);
 
   if (currentScore === computerGuess) {
-    youWon();
+    youWin();
   } else if (currentScore > computerGuess) {
-    youLost();
+    youLose();
   }
 });
 
-
 $("#image2").on("click", function () {
-  console.log("image 2 clicked")
-  currentScore = currentScore + numbers2;
+
+  currentScore = currentScore + c2;
   $("#userScore").text(currentScore);
+
   if (currentScore === computerGuess) {
-    youWon();
+    youWin();
   } else if (currentScore > computerGuess) {
-    youLost();
+    youLose();
   }
 });
 
 $("#image3").on("click", function () {
-  console.log("image 3 clicked")
-  currentScore = currentScore + numbers3;
+
+  currentScore = currentScore + c3;
   $("#userScore").text(currentScore);
+
   if (currentScore === computerGuess) {
-    youWon();
+    youWin();
   } else if (currentScore > computerGuess) {
-    youLost();
+    youLose();
   }
 });
 
 $("#image4").on("click", function () {
-  console.log("image 4 clicked")
-  currentScore = currentScore + numbers4;
+
+  currentScore = currentScore + c4;
   $("#userScore").text(currentScore);
-  console.log(currentScore);
+
   if (currentScore === computerGuess) {
-    youWon();
+    youWin();
   } else if (currentScore > computerGuess) {
-    youLost();
+    youLose();
   }
 });
-
-//variable for user guess
-
-
-
-$("#userScore").text(currentScore);
-console.log("loaded");
 
 //reset the game
 $("button").on("click", function () {
   reset();
-  console.log(computerGuess);
   $("#computerGuess").text(computerGuess);
 });
 

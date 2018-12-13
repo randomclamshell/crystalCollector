@@ -16,11 +16,11 @@ Crystal Collector is a Javascript app that uses Math.floor(Math.random()) to gen
 
 ##Tech
 
--Math.floor()
--Math.random()
--Bootstrap
--Google Fonts
--jQuery
+- Math.floor()
+- Math.random()
+- Bootstrap
+- Google Fonts
+- jQuery
 
 <a name="installing"></a>
 
