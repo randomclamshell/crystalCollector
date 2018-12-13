@@ -24,14 +24,14 @@ var numbers4 = Math.floor(Math.random() * (9 - 1 + 1)) + 1;
 
 
 //variable for computer guess
-var computerGuess = Math.floor(Math.random() * 20) + 50;
+var computerGuess = Math.floor(Math.random() * 20) + 80;
 console.log(computerGuess);
 
 $("#computerGuess").text(computerGuess);
 
 function reset() {
   userScore = 0;
-  computerGuess = Math.floor(Math.random() * 20) + 50;
+  computerGuess = Math.floor(Math.random() * 20) + 80;
   $("#userScore").text(userScore);
 
 console.log("new number1: " + numbers1)
