@@ -1,9 +1,10 @@
 * {  /* the * means select everything on the page */
-  align-content: center;
+  text-align: center;
+  margin: auto;
 }
 
 body {
-  background-image: url("https://wallpapercave.com/wp/nsFJoNv.jpg");
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/153/567/large_2x/cavern-background-blue-free-vector.jpg");
   position: ;
   z-index: -123;
 }
@@ -23,6 +24,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   padding: 10px;
   border: black 2px solid;
+  margin: auto;
 }
 
 .row {
@@ -37,4 +39,12 @@ nav {
 
 .bkgrnd {
   z-index: -234;
+}
+
+.instructions {
+  width: 50%;
+}
+
+.container {
+  font-size: 30px;
 }
