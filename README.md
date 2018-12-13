@@ -26,14 +26,10 @@ Crystal Collector is a Javascript app that uses Math.floor(Math.random()) to gen
 
 ## Installing
 
-## Step 1
-Clone the repository to your machine using the following link:
+### Step 1
+Clone the repository to your machine using the following link (also feel free to visit directly to launch):
 
 >git clone https://randomclamshell.github.io/crystalCollector/
 
-## Step 2
-Locate where the repository was cloned and open index.html in your default browser (Chrome works best!).
-
-## OR
-
-Go to https://randomclamshell.github.io/crystalCollector/ ;)
+### Step 2
+Locate where the repository was cloned (if cloned!) and open index.html in your default browser (Chrome works best!).
