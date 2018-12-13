@@ -1,10 +1,10 @@
 # Crystal Collector
-----------
+------------------------------------------------------------
 
 ## Table of Contents
-1. [Overview] (#overview)
-2. [Tech] (#tech)
-3. [Installing] (#installing)
+1. [Overview](#overview)
+2. [Tech](#tech)
+3. [Installing](#installing)
 
 <a name= "overview"></a>
 
